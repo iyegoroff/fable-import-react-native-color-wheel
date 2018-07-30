@@ -7,7 +7,7 @@ open Fable.Import.ReactNativeColorWheel
 open Fable.Core
 open Fable.Core.JsInterop
 
-type RNS = ReactNativeColorWheel.Globals
+type RNCW = ReactNativeColorWheel.Globals
 
 module Props =
 
@@ -51,7 +51,7 @@ type private ExtColorWheel (props: ExtColorWheelProps) as this =
 
   override this.render () =
     React.createElement(
-      RNS.ColorWheel,
+      RNCW.ColorWheel,
       !!JS.Object.assign(
         createEmpty,
         this.props,
